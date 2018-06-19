@@ -2871,13 +2871,93 @@
     </div>
     <div class="returnTop">
         <div class="rightSideBarCon">
-                <div class="rightsbc1">
-                    
+            <div class="rightsbc1">
+                <i></i>
+                <span>我</span>
+                <div class="sidebarUser">
+                    <div class="sidebarUserPho">
+                        <div class="logo">
+                            <img src="public/images/sbbgg.jpg" alt="" width="85px">
+                        </div>
+                        <div class="login">
+                            <span>您好！请<a href="" class="denglu">登录</a></span>
+                        </div>
+                    </div>
+                    <div class="sidebarUserOpe">
+                        <div class="myorder">
+                            <a href="">
+                                <i class="one"></i>
+                                <span>我的订单</span>
+                            </a>
+                        </div>
+                        <div class="myorder">
+                            <a href="">
+                                <i class="two"></i>
+                                <span>我的优惠券</span>
+                            </a>
+                        </div>
+                        <div class="myorder">
+                            <a href="">
+                                <i class="three"></i>
+                                <span>订单跟踪</span>
+                            </a>
+                        </div>
+
+                        <div class="myorder">
+                            <a href="">
+                                <i class="four"></i>
+                                <span>我的订单</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-        </div>
-        <div class="rightSideBarBot">
+            </div>
+            <div class="rightsbc2">
+                <i></i>
+                <span>收藏</span>
+                <div class="sidebarUser2">
+                    <div class="sidebarUserPho">
+                        <div class="logo">
+                            <img src="public/images/sbbgg.jpg" alt="" width="85px">
+                        </div>
+                        <div class="login">
+                            <span>您好！请<a href="" class="denglu">登录</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightsbc3">
+                <i></i>
+                <span>购物车</span>
+            </div>
 
         </div>
+        <div class="rightSideBarBot">
+            <div class="fankui">
+                <i></i>
+                <div class="fankui-left">
+                    <span>用户反馈</span>
+                </div>
+            </div>
+            <div class="weixin">
+                <i></i>
+                <div class="weixinleft">
+                    <img src="public/images/jxPho-code.jpg">
+                </div>
+            </div>
+            <div class="rtop">
+                <i></i>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="rtop-left">
+
     </div>
 <script>
 $(".main .right .jiuxian").mouseenter(function(){
@@ -2934,7 +3014,7 @@ $(".logoBox  ul li img").hover(
     function () {
         $(this).stop().animate({
             "left" : "0px"
-    },300)
+    },300   )
     }
 );
 
@@ -2952,6 +3032,71 @@ $(".titleBox  li").mouseenter(function () {
 sw=$(window).width();
 $(".returnTop").css({"height":sw+"px"});
 
+
+$(".rightsbc1").mouseenter(function () {
+    x = $(this).position().left+35;
+    y = $(this).position().top;
+    $ (".sidebarUser").show().css({"top":y+"px","right":x+"px"});
+});
+
+$(".rightsbc1").mouseleave(function () {
+    $(".sidebarUser").hide();
+});
+
+$(".rightsbc2").mouseenter(function () {
+    x = $(this).position().left+35;
+    y = $(this).position().top;
+    $ (".sidebarUser2").show().css({"top":y+"px","right":x+"px"});
+});
+
+$(".rightsbc2").mouseleave(function () {
+    $(".sidebarUser2").hide();
+});
+
+$(".rightSideBarBot .rtop").mouseenter(function () {
+    $(this).find("i").css({"background-position": "-40px -203px"});
+});
+
+$(".rightSideBarBot .rtop").mouseleave(function () {
+    $(this).find("i").css({"background-position": "-40px -186px"});
+});
+
+$(".rightSideBarBot .fankui").mouseenter(function () {
+    $(this).find("i").css({"background-position": "3px -203px"});
+    x = $(this).position().left+35;
+    y = $(this).position().top;
+    $ (this).find(".fankui-left").show().css({"top":y+"px","right":x+"px"});
+});
+
+$(".rightSideBarBot .fankui").mouseleave(function () {
+    $(this).find("i").css({"background-position": "3px -186px"});
+    $ (this).find(".fankui-left").hide();
+});
+
+$(".rightSideBarBot .weixin").mouseenter(function () {
+    $(this).find("i").css({"background-position": "-19px -203px"});
+    x = $(this).position().left+35;
+    y = $(this).position().top;
+    $ (this).find(".weixinleft").show().css({"top":y+"px","right":x+"px"});
+});
+
+$(".rightSideBarBot .weixin").mouseleave(function () {
+    $(this).find("i").css({"background-position": "-19px -186px"});
+    $ (this).find(".weixinleft").hide();
+});
+//点击缓缓回到顶部
+$(".rtop").click(function () {
+    s=$(window).scrollTop();
+    v =100;
+    setInterval(function () {
+        s-=v;
+        if (s<=0) {
+            s=0;
+            clearInterval(sobj);
+        }
+        $(window).scrollTop(s);
+    },10);
+});
 </script>
 
 </body>

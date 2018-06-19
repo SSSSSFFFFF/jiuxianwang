@@ -922,16 +922,93 @@ list-style: none;
     position: fixed;
     right: 0px;
     top: 0px;
+    z-index: 999999;
 
 }
 
 .rightSideBarCon {
     position: absolute;
     height: 256px;
-    top:100px;
+    top:150px;
     right:0px;
-    background-color: #aaa;
     width: 100%;
+}
+
+
+
+.rightsbc1 {
+    height: 57px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rightsbc1 i{
+    background: url("../images/public-24.png") no-repeat 0px -163px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.rightsbc1:hover {
+    height: 57px;
+    background: #c00;
+    color: #fff;
+}
+
+.rightsbc2 {
+    cursor: pointer;
+    margin-top: 10px;
+    height: 57px;
+    text-align: center;
+
+}
+
+.rightsbc2 i{
+    background: url("../images/public-24.png") no-repeat -40px -163px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.rightsbc2:hover {
+    height: 57px;
+    background: #c00;
+    color: #fff;
+
+}
+
+.login {
+    color: #000;
+}
+
+.rightsbc3 {
+    cursor: pointer;
+    margin-top: 10px;
+    height: 97px;
+    text-align: center;
+}
+
+.rightsbc3 i{
+    background: url("../images/public-24.png") no-repeat -120px -163px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.rightsbc3:hover {
+    color: #fff;
+
+    background: #c00;
+}
+
+.rightsbc3 span {
+    display: block;
+    width: 14px;
+    margin-left: 10px;
+
 }
 
 .rightSideBarBot {
@@ -939,6 +1016,203 @@ list-style: none;
     height: 100px;
     top: 500px;
     right:0px;
-    background-color: #aaa;
     width: 100%;
+}
+
+.sidebarUser {
+    width: 270px;
+    height: 281px;
+    background: #fff;
+    display: none;
+    position: absolute;
+    border: 2px solid #e5e5e5;
+}
+
+.sidebarUser2 {
+    width: 270px;
+    height: 100px !important;
+    background: #fff;
+    display: none;
+    position: absolute;
+    border: 2px solid #e5e5e5;
+}
+
+.sidebarUserPho{
+    height: 114px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.sidebarUserPho .logo{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 80px;
+    top: 15px;
+    left: 15px;
+    float: left;
+}
+.sidebarUserPho .denglu {
+    color: #c00;
+
+}
+.sidebarUserPho .logo img {
+    display: block;
+
+}
+
+.sidebarUserPho .login{
+    float: left;
+    position: relative;
+    top: -30px;
+    left: 50px;
+    width: 200px;
+    height: 40px;
+}
+
+.sidebarUserOpe {
+    height: 167px;
+    background: #f9f9f9;
+}
+
+.sidebarUserOpe .myorder {
+    float: left;
+    width: 130px;
+    height: 80px;
+    margin: 2px;
+    text-align: center;
+}
+
+.sidebarUserOpe .one {
+    background: url("../images/public-24.png") no-repeat  -63px -190px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+
+
+}
+.sidebarUserOpe .two {
+    background: url("../images/public-24.png") no-repeat  -96px -189px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+
+
+}
+.sidebarUserOpe .three {
+    background: url("../images/public-24.png") no-repeat  -158px -185px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+
+
+}
+.sidebarUserOpe .four {
+    background: url("../images/public-24.png") no-repeat  -158px -219px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+
+
+}
+
+.myorder a {
+    text-decoration: none;
+    color: rgb(102,102,102);
+}
+
+.rightSideBarBot .fankui{
+    height: 16px;
+    background: #fff;
+    padding-top:8px;
+    padding-bottom:8px;
+    text-align: center;
+    cursor: pointer;
+}
+.rightSideBarBot .fankui i{
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    background: url("../images/public-24.png") no-repeat 3px -186px;
+}
+.rightSideBarBot .fankui:hover{
+    background: #c00;
+
+}
+.rightSideBarBot .weixin {
+    height: 16px;
+    background: #fff;
+    padding-top:8px;
+    padding-bottom:8px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.rightSideBarBot .weixin i{
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    background: url("../images/public-24.png") no-repeat -19px -186px;
+}
+.rightSideBarBot .weixin:hover{
+    background: #c00;
+
+}
+.rightSideBarBot .rtop{
+    height: 16px;
+    background: #fff;
+    padding-top:8px;
+    padding-bottom:8px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.rightSideBarBot .rtop i{
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    background: url("../images/public-24.png") no-repeat -40px -186px;
+}
+
+
+.rightSideBarBot .rtop:hover{
+    background: #c00;
+
+}
+
+.fankui-left {
+    width: 88px;
+    height: 35px;
+    background: #fff;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+}
+
+.weixinleft {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+}
+.weixinleft img {
+    display: block;
+}
+.rtop-left {
+
 }
